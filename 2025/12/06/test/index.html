@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/jialezuo/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/jialezuo/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/jialezuo/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/jialezuo/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/jialezuo/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"github.com","root":"/jialezuo/","images":"/jialezuo/images","scheme":"Muse","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/jialezuo/js/config.js" defer></script>
+
+    <meta name="description" content="一、C++基础Q:说一下C++和C的区别？ 设计思想上：  C++是面向对象的语言，而C是面向过程的结构化编程语言  语法上：  C++具有封装、继承和多态三种特性 C++相比C，增加多许多类型安全的功能，比如强制类型转换、（C的类型转换是不一定安全的，比如double转int） C++支持范式编程，比如模板类、函数模板等 Q:说一下C++和Java的区别？1.编译： ​	Java源码会先经过一次">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++基础问答">
+<meta property="og:url" content="https://github.com/jialezuo/2025/12/06/test/index.html">
+<meta property="og:site_name" content="Jiale.zuo&#39;s Notes">
+<meta property="og:description" content="一、C++基础Q:说一下C++和C的区别？ 设计思想上：  C++是面向对象的语言，而C是面向过程的结构化编程语言  语法上：  C++具有封装、继承和多态三种特性 C++相比C，增加多许多类型安全的功能，比如强制类型转换、（C的类型转换是不一定安全的，比如double转int） C++支持范式编程，比如模板类、函数模板等 Q:说一下C++和Java的区别？1.编译： ​	Java源码会先经过一次">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-12-06T12:40:14.000Z">
+<meta property="article:modified_time" content="2025-12-06T12:42:23.737Z">
+<meta property="article:author" content="左家乐">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://github.com/jialezuo/2025/12/06/test/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://github.com/jialezuo/2025/12/06/test/","path":"2025/12/06/test/","title":"C++基础问答"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>C++基础问答 | Jiale.zuo's Notes</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/jialezuo/js/utils.js" defer></script><script src="/jialezuo/js/motion.js" defer></script><script src="/jialezuo/js/sidebar.js" defer></script><script src="/jialezuo/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/jialezuo/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/jialezuo/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Jiale.zuo's Notes</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">~~~</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81C-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">一、C++基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CC%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">Q:说一下C++和C的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CJava%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">Q:说一下C++和Java的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8Bc-%E5%92%8Cpython%E5%9C%A8%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E4%B8%8A%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">Q:说一下c++和python在语言特性上的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B7%E4%BD%A0%E6%9D%A5%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8Bconst%E4%BF%AE%E9%A5%B0%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.4.</span> <span class="nav-text">Q:请你来回答一下const修饰成员函数的目的是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%8C%E5%92%8C%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.5.</span> <span class="nav-text">Q:常量指针，和指针常量的区别？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%EF%BC%88-const-p%EF%BC%89"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.指针常量（* const p）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%88const-p%EF%BC%89"><span class="nav-number">1.5.2.</span> <span class="nav-text">2.常量指针（const *p）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%A4%E6%96%AD%E6%8A%80%E5%B7%A7"><span class="nav-number">1.5.3.</span> <span class="nav-text">3.判断技巧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-char-p-%E5%92%8Cchar-p-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.6.</span> <span class="nav-text">Q:char *p 和char p[]的区别？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%AF%BB%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.1.</span> <span class="nav-text">1.读写的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%88%86%E9%85%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.2.</span> <span class="nav-text">2.分配地址的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AD%98%E5%8F%96%E6%95%88%E7%8E%87%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.3.</span> <span class="nav-text">3.存取效率的区别：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-C-%E7%A8%8B%E5%BA%8F%E6%94%B9%E9%94%99%EF%BC%9F"><span class="nav-number">1.7.</span> <span class="nav-text">Q:C++程序改错？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E4%B8%ADstatic%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">1.8.</span> <span class="nav-text">Q:说一下C++中static关键字的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%A8%E5%B1%80%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">1.8.1.</span> <span class="nav-text">1.全局静态变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B1%80%E9%83%A8%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">1.8.2.</span> <span class="nav-text">2.局部静态变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.3.</span> <span class="nav-text">3.静态函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E6%88%90%E5%91%98"><span class="nav-number">1.8.4.</span> <span class="nav-text">4.类的静态成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.5.</span> <span class="nav-text">5.类的静态函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B7%E4%BD%A0%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8B%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%9F"><span class="nav-number">1.9.</span> <span class="nav-text">Q: 请你回答一下静态变量什么时候初始化？</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">左家乐</p>
+  <div class="site-description" itemprop="description">一些技术博客和随笔</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/jialezuo/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://github.com/jialezuo/2025/12/06/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/jialezuo/images/avatar.gif">
+      <meta itemprop="name" content="左家乐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiale.zuo's Notes">
+      <meta itemprop="description" content="一些技术博客和随笔">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="C++基础问答 | Jiale.zuo's Notes">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          C++基础问答
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+      
+
+      <time title="Created: 2025-12-06 20:40:14 / Modified: 20:42:23" itemprop="dateCreated datePublished" datetime="2025-12-06T20:40:14+08:00">2025-12-06</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="一、C-基础"><a href="#一、C-基础" class="headerlink" title="一、C++基础"></a>一、C++基础</h1><h2 id="Q-说一下C-和C的区别？"><a href="#Q-说一下C-和C的区别？" class="headerlink" title="Q:说一下C++和C的区别？"></a>Q:说一下C++和C的区别？</h2><ul>
+<li>设计思想上：</li>
+</ul>
+<p>C++是面向对象的语言，而<strong>C是面向过程的结构化编程语言</strong></p>
+<ul>
+<li>语法上：</li>
+</ul>
+<p>C++具<strong>有封装、继承和多态</strong>三种特性</p>
+<p>C++相比C，<strong>增加多许多类型安全的功能</strong>，比如强制类型转换、<strong>（C的类型转换是不一定安全的，比如double转int）</strong></p>
+<p>C++支持<strong>范式编程</strong>，比如模板类、函数模板等</p>
+<h2 id="Q-说一下C-和Java的区别？"><a href="#Q-说一下C-和Java的区别？" class="headerlink" title="Q:说一下C++和Java的区别？"></a>Q:说一下C++和Java的区别？</h2><p><strong>1.编译：</strong></p>
+<p>​	Java源码会先经过一次编译，成为<strong>中间码</strong>，中间码再被解释器解释成机器码；C++源码一次编译，直接在编译的过程中链接了，形成了机器码。</p>
+<p><strong>2.执行效率：</strong></p>
+<p>​	C++比Java执行速度快，但是Java可以利用JVM跨平台。</p>
+<p> <strong>3.面向对象：</strong></p>
+<p>​	Java是纯面向对象的语言，<strong>所有代码（包括函数、变量）都必须在类中定义</strong>。而C++中还有面向过程的东西，比如是<strong>全局变量和全局函数。</strong></p>
+<p><strong>4.继承：</strong></p>
+<p>​	 C++支持多继承，Java中类都是<strong>单继承</strong>的。</p>
+<p><strong>5.内存管理：</strong></p>
+<p>​	C++开发需要自己去管理内存，Java中JVM有自己的GC机制，不用程序员手动管理内存分配。</p>
+<h2 id="Q-说一下c-和python在语言特性上的区别？"><a href="#Q-说一下c-和python在语言特性上的区别？" class="headerlink" title="Q:说一下c++和python在语言特性上的区别？"></a>Q:说一下c++和python在语言特性上的区别？</h2><p><strong>语言分类：</strong></p>
+<p>编译型语言、解释型语言、混合型语言</p>
+<p>1.解释型语言</p>
+<p>​	python，由解释器根据输入的数据当场执行而不生成任何的目标程序，<strong>效率较慢</strong></p>
+<p>2.编译型语言</p>
+<p>​	c、c++</p>
+<p>3.混合型语言</p>
+<p>​	Java程序也需要编译，但是没有直接编译称为机器语言，而是编译称为字节码，然后在Java虚拟机上用解释方式执行字节码。</p>
+<p><strong>区别：</strong></p>
+<p>1、运行效率：C++ &gt;&gt; Python</p>
+<p>2、开发效率：Python &gt;&gt; C++</p>
+<p>1、代码形式<br>缩进：在Python，用不同级别的缩进表示不同级别的代码块。</p>
+<p>全局变量：在函数内部是可以访问到全局变量的，但直接修改就不行。如果想要修改，可以使用global 标识 a 为全局变量</p>
+<p>循环：在Python中，是使用可迭代对象（如字符串、列表、元组、字典、文件等）来构成循环</p>
+<h2 id="Q-请你来回答一下const修饰成员函数的目的是什么？"><a href="#Q-请你来回答一下const修饰成员函数的目的是什么？" class="headerlink" title="Q:请你来回答一下const修饰成员函数的目的是什么？"></a>Q:请你来回答一下const修饰成员函数的目的是什么？</h2><p>const修饰的成员函数表明<strong>函数调用不会对对象做出任何更改</strong>，事实上，如果确认不会对对象做更改，就应该为函数加上const限定，<strong>这样无论const对象还是普通对象都可以调用该函数。</strong></p>
+<p>大家都可以调用的函数，但是又保证了不会对数据的更改。</p>
+<h2 id="Q-常量指针，和指针常量的区别？"><a href="#Q-常量指针，和指针常量的区别？" class="headerlink" title="Q:常量指针，和指针常量的区别？"></a>Q:常量指针，和指针常量的区别？</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weibo_dm/article/details/80445205">https://blog.csdn.net/weibo_dm/article/details/80445205</a></p>
+<h3 id="1-指针常量（-const-p）"><a href="#1-指针常量（-const-p）" class="headerlink" title="1.指针常量（* const p）"></a>1.指针常量（* const p）</h3><p>指针常量：顾名思义它就是一个常量，但是是指针修饰的。<br><strong>格式为：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> * <span class="type">const</span> p <span class="comment">//指针常量</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>特性：</strong></p>
+<ul>
+<li>指针指向的地址不能变</li>
+<li>地址里面的内容可以变</li>
+</ul>
+<h3 id="2-常量指针（const-p）"><a href="#2-常量指针（const-p）" class="headerlink" title="2.常量指针（const *p）"></a>2.常量指针（const *p）</h3><p>常量指针：如果在定义指针变量的时候，数据类型前用const修饰</p>
+<p><strong>格式：</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> *p = &amp;a; <span class="comment">//常量指针</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>特性：</strong></p>
+<ul>
+<li>指针的解引用（内容）不能变</li>
+<li>指针的指向地址可以变</li>
+</ul>
+<h3 id="3-判断技巧"><a href="#3-判断技巧" class="headerlink" title="3.判断技巧"></a>3.判断技巧</h3><p>就看const后面跟的是什么，什么就不能变。</p>
+<p>比如 const *p，后面跟的是 *p，他是指针的值，所以值不能变，指向可以变。</p>
+<p>int * const p，那么后面跟的是p，p是指针的地址，所以指向不能变，值可以变。</p>
+<h2 id="Q-char-p-和char-p-的区别？"><a href="#Q-char-p-和char-p-的区别？" class="headerlink" title="Q:char *p 和char p[]的区别？"></a>Q:char *p 和char p[]的区别？</h2><h3 id="1-读写的区别："><a href="#1-读写的区别：" class="headerlink" title="1.读写的区别："></a>1.读写的区别：</h3><p>char* p是一个指针，<strong>根本没分配内存</strong>，<strong>他指向的”abc123ABC” 是只读的，不能改变</strong>，给他赋值肯定是错的而char p[]是一个数组，已经分配内存，是将”abc123ABC” 复制到该内存里面，<strong>这个内存是可读写的</strong></p>
+<p>从一般实现方式来看：<br><strong>char ca[]&#x3D;”abcd”;</strong>——<strong>ca为局部变量（自动变量或寄存器变量）时具有自动存储期，放在运行期内存的栈中</strong>；ca为全局或局部静态变量时具有静态存储期，放在内存的静态区；字符串字面量”abcd”具有静态存储期，放在文字常量区。这里，对象”abcd”作为一个右值用来初始化对象ca，两者不是同一回事。<br><em><em>char</em> cb &#x3D; “abcd”;（这种用法在C++中为deprecated，应使用const char</em> cb &#x3D; “abcd”;代替）**——按指针引用cb和”abcd”时视为引用同一个对象（作为一元&amp;和sizeof的操作数等左值语义上下文中时则不同），一般放在文字常量区。<br><strong>文字常量区是只读的</strong>，而且更改字面量本身语义是不明确的，因此C++把字符串字面量视为字符串常量，禁止通过指针更改字面量本身。</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">也即：</span><br><span class="line"><span class="type">char</span> ca[]=<span class="string">&quot;abcd&quot;</span>;<span class="comment">//这个是栈常量，可以修改。</span></span><br><span class="line"><span class="type">char</span> *cb = <span class="string">&quot;abcd&quot;</span>;<span class="comment">//这个是字符串常量，存在文字常量区，地址受保护，只读。</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-分配地址的区别："><a href="#2-分配地址的区别：" class="headerlink" title="2.分配地址的区别："></a><strong>2.分配地址的区别：</strong></h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a=<span class="number">0</span>;    <span class="comment">//全局初始化区，bss段</span></span><br><span class="line"><span class="type">char</span> *p1;   <span class="comment">//全局未初始化区，bss段</span></span><br><span class="line"><span class="built_in">main</span>()</span><br><span class="line">&#123;</span><br><span class="line">   <span class="type">int</span> b;			<span class="comment">//栈</span></span><br><span class="line">   <span class="type">char</span> s[]=<span class="string">&quot;abc&quot;</span>;   <span class="comment">//栈</span></span><br><span class="line">   <span class="type">char</span> *p2;         <span class="comment">//栈</span></span><br><span class="line">   <span class="type">char</span> *p3=<span class="string">&quot;123456&quot;</span>;   <span class="comment">//123456\0在  文字常量区 ，  p3在栈上！！</span></span><br><span class="line">   <span class="type">static</span> <span class="type">int</span> c=<span class="number">0</span>；   <span class="comment">//全局（静态）初始化区</span></span><br><span class="line">   p1 = (<span class="type">char</span>*)<span class="built_in">malloc</span>(<span class="number">10</span>);</span><br><span class="line">   p2 = (<span class="type">char</span>*)<span class="built_in">malloc</span>(<span class="number">20</span>);   <span class="comment">//分配得来得10和20字节的区域就在堆区。</span></span><br><span class="line">   <span class="built_in">strcpy</span>(p1,<span class="string">&quot;123456&quot;</span>);   <span class="comment">//123456\0放在常量区，编译器可能会将它与p3所向&quot;123456&quot;优化成一个地方。</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-存取效率的区别："><a href="#3-存取效率的区别：" class="headerlink" title="3.存取效率的区别："></a>3.存取效率的区别：</h3><p>char s1[]&#x3D;”aaaaaaaaaaaaaaa”;<br>char *s2&#x3D;”bbbbbbbbbbbbbbbbb”;<br>aaaaaaaaaaa是在  <strong>运行时刻</strong>  赋值的；<br>而bbbbbbbbbbb是在  <strong>编译时</strong> 就确定的；</p>
+<ul>
+<li>在以后的存取中，在栈上的数组比指针所指向的字符串(例如堆)快。</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">voidmain</span>()</span><br><span class="line">&#123;</span><br><span class="line">    <span class="type">char</span> a=<span class="number">1</span>;</span><br><span class="line">    <span class="type">char</span> c[]=<span class="string">&quot;1234567890&quot;</span>;</span><br><span class="line">    <span class="type">char</span> *p=<span class="string">&quot;1234567890&quot;</span>;</span><br><span class="line">    a = c[<span class="number">1</span>];</span><br><span class="line">    a = p[<span class="number">1</span>];</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第一种在读取时直接就把  <strong>字符串中的元素读到寄存器cl中</strong>  </p>
+<p>而第二种则要  <strong>先把指针值读到edx中，在根据edx读取字符</strong>，显然慢了。</p>
+<h2 id="Q-C-程序改错？"><a href="#Q-C-程序改错？" class="headerlink" title="Q:C++程序改错？"></a>Q:C++程序改错？</h2><h2 id="Q-说一下C-中static关键字的作用"><a href="#Q-说一下C-中static关键字的作用" class="headerlink" title="Q:说一下C++中static关键字的作用"></a>Q:说一下C++中static关键字的作用</h2><h3 id="1-全局静态变量"><a href="#1-全局静态变量" class="headerlink" title="1.全局静态变量"></a>1.全局静态变量</h3><p>作用：在全局变量前加上关键字static，<strong>全局变量就定义成一个全局静态变量.</strong></p>
+<p>存储区域：<strong>静态存储区</strong>，在整个程序运行期间一直存在。</p>
+<p>初始化：<strong>未经初始化的全局静态变量会被自动初始化为0！！</strong>（自动对象的值是任意的，除非他被显式初始化）；</p>
+<p>作用域：全局静态变量在<strong>声明他的文件之外是不可见</strong>的，准确地说是从定义之处开始，到文件结尾。</p>
+<h3 id="2-局部静态变量"><a href="#2-局部静态变量" class="headerlink" title="2.局部静态变量"></a>2.局部静态变量</h3><p>在局部变量之前加上关键字static，局部变量就成为一个局部静态变量。</p>
+<p>内存中的位置：<strong>静态存储区</strong></p>
+<p>初始化：<strong>未经初始化的全局静态变量会被自动初始化为0</strong>（自动对象的值是任意的，除非他被显式初始化）；</p>
+<p>作用域：<strong>作用域仍为局部作用域</strong>，当定义它的函数或者语句块结束的时候，作用域结束。<strong>但是当局部静态变量离开作用域后，并没有销毁，而是仍然驻留在内存当中</strong>，只不过我们不能再对它进行访问，直到该函数再次被调用，并且值不变；</p>
+<h3 id="3-静态函数"><a href="#3-静态函数" class="headerlink" title="3.静态函数"></a>3.静态函数</h3><p>作用：在函数返回类型前加static，函数就定义为静态函数。<strong>函数的定义和声明在默认情况下都是extern的</strong>，但静态函数只是在<strong>声明他的文件当中可见，不能被其他文件所用</strong>。</p>
+<p>作用域：函数的实现使用static修饰，那么这个函数只可在本cpp内使用，<strong>不会同其他cpp中的同名函数引起冲突</strong>；</p>
+<p>warning：不要再头文件中声明static的全局函数，不要在cpp内声明非static的全局函数，如果你要在多个cpp中复用该函数，就把它的声明提到头文件里去，否则cpp内部声明需加上static修饰；</p>
+<h3 id="4-类的静态成员"><a href="#4-类的静态成员" class="headerlink" title="4.类的静态成员"></a>4.类的静态成员</h3><p>在类中，静态成员可以实现多个对象之间的数据共享，并且使用静态数据成员还不会破坏隐藏的原则，即保证了安全性。因此，<strong>静态成员是类的所有对象中共享的成员</strong>，而不是某个对象的成员。对多个对象来说，静态数据成员只存储一处，供所有对象共用。</p>
+<ul>
+<li><strong>类的静态成员，必须类内声明，类外初始化。</strong></li>
+</ul>
+<h3 id="5-类的静态函数"><a href="#5-类的静态函数" class="headerlink" title="5.类的静态函数"></a>5.类的静态函数</h3><p>静态成员函数和静态数据成员一样，<strong>它们都属于类的静态成员，它们都不是对象成员</strong>。因此，对静态成员的引用不需要用对象名。</p>
+<p>注意：</p>
+<p>​	<strong>因为没有this指针，在静态成员函数的实现中不能直接引用类中说明的非静态成员，可以引用类中说明的静态成员（这点非常重要）</strong>。如果静态成员函数中要引用非静态成员时，可通过对象来引用。从中可看出，调用静态成员函数使用如下格式：&lt;类名&gt;::&lt;静态成员函数名&gt;(&lt;参数表&gt;);</p>
+<h2 id="Q-请你回答一下静态变量什么时候初始化？"><a href="#Q-请你回答一下静态变量什么时候初始化？" class="headerlink" title="Q: 请你回答一下静态变量什么时候初始化？"></a>Q: 请你回答一下静态变量什么时候初始化？</h2><p>静态变量存储在虚拟地址空间的  <strong>数据段</strong>（初始化）   和   <strong>bss段</strong>（未初始化）</p>
+<p>C语言中其在<strong>代码执行之前初始化，属于编译期初始化</strong>。</p>
+<p>C++中由于引入对象，对象生成必须调用构造函数，<strong>因此C++规定全局或局部静态对象当且仅当对象首次用到时进行构造。</strong></p>
+<p>c++中static对象是在用的时候构造。。。全局对象是在执行代码之前构造。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/jialezuo/2025/12/06/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-angle-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">左家乐</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
