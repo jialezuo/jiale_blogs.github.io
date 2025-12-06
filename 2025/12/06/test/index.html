@@ -20,22 +20,26 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="一、C++基础Q:说一下C++和C的区别？ 设计思想上：  C++是面向对象的语言，而C是面向过程的结构化编程语言  语法上：  C++具有封装、继承和多态三种特性 C++相比C，增加多许多类型安全的功能，比如强制类型转换、（C的类型转换是不一定安全的，比如double转int） C++支持范式编程，比如模板类、函数模板等 Q:说一下C++和Java的区别？1.编译： ​	Java源码会先经过一次">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++基础问答">
+<meta property="og:url" content="http://example.com/2025/12/06/test/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、C++基础Q:说一下C++和C的区别？ 设计思想上：  C++是面向对象的语言，而C是面向过程的结构化编程语言  语法上：  C++具有封装、继承和多态三种特性 C++相比C，增加多许多类型安全的功能，比如强制类型转换、（C的类型转换是不一定安全的，比如double转int） C++支持范式编程，比如模板类、函数模板等 Q:说一下C++和Java的区别？1.编译： ​	Java源码会先经过一次">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-12-06T12:40:14.000Z">
+<meta property="article:modified_time" content="2025-12-06T12:42:23.737Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2025/12/06/test/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2025/12/06/test/","path":"2025/12/06/test/","title":"C++基础问答"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo</title>
+<title>C++基础问答 | Hexo</title>
   
 
 
@@ -82,7 +86,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Hexo</h1>
+      <p class="site-title">Hexo</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -104,7 +108,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -117,6 +121,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81C-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">一、C++基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CC%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">Q:说一下C++和C的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CJava%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">Q:说一下C++和Java的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8Bc-%E5%92%8Cpython%E5%9C%A8%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E4%B8%8A%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">Q:说一下c++和python在语言特性上的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B7%E4%BD%A0%E6%9D%A5%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8Bconst%E4%BF%AE%E9%A5%B0%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.4.</span> <span class="nav-text">Q:请你来回答一下const修饰成员函数的目的是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%8C%E5%92%8C%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.5.</span> <span class="nav-text">Q:常量指针，和指针常量的区别？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%EF%BC%88-const-p%EF%BC%89"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.指针常量（* const p）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%88const-p%EF%BC%89"><span class="nav-number">1.5.2.</span> <span class="nav-text">2.常量指针（const *p）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%A4%E6%96%AD%E6%8A%80%E5%B7%A7"><span class="nav-number">1.5.3.</span> <span class="nav-text">3.判断技巧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-char-p-%E5%92%8Cchar-p-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.6.</span> <span class="nav-text">Q:char *p 和char p[]的区别？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%AF%BB%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.1.</span> <span class="nav-text">1.读写的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%88%86%E9%85%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.2.</span> <span class="nav-text">2.分配地址的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AD%98%E5%8F%96%E6%95%88%E7%8E%87%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.3.</span> <span class="nav-text">3.存取效率的区别：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-C-%E7%A8%8B%E5%BA%8F%E6%94%B9%E9%94%99%EF%BC%9F"><span class="nav-number">1.7.</span> <span class="nav-text">Q:C++程序改错？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E4%B8%ADstatic%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">1.8.</span> <span class="nav-text">Q:说一下C++中static关键字的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%A8%E5%B1%80%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">1.8.1.</span> <span class="nav-text">1.全局静态变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B1%80%E9%83%A8%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">1.8.2.</span> <span class="nav-text">2.局部静态变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.3.</span> <span class="nav-text">3.静态函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E6%88%90%E5%91%98"><span class="nav-number">1.8.4.</span> <span class="nav-text">4.类的静态成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.5.</span> <span class="nav-text">5.类的静态函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B7%E4%BD%A0%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8B%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%9F"><span class="nav-number">1.9.</span> <span class="nav-text">Q: 请你回答一下静态变量什么时候初始化？</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -146,16 +151,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/12/06/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -169,13 +175,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
+      <meta itemprop="name" content="C++基础问答 | Hexo">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/12/06/test/" class="post-title-link" itemprop="url">C++基础问答</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          C++基础问答
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -198,8 +204,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="一、C-基础"><a href="#一、C-基础" class="headerlink" title="一、C++基础"></a>一、C++基础</h1><h2 id="Q-说一下C-和C的区别？"><a href="#Q-说一下C-和C的区别？" class="headerlink" title="Q:说一下C++和C的区别？"></a>Q:说一下C++和C的区别？</h2><ul>
+    <div class="post-body" itemprop="articleBody"><h1 id="一、C-基础"><a href="#一、C-基础" class="headerlink" title="一、C++基础"></a>一、C++基础</h1><h2 id="Q-说一下C-和C的区别？"><a href="#Q-说一下C-和C的区别？" class="headerlink" title="Q:说一下C++和C的区别？"></a>Q:说一下C++和C的区别？</h2><ul>
 <li>设计思想上：</li>
 </ul>
 <p>C++是面向对象的语言，而<strong>C是面向过程的结构化编程语言</strong></p>
@@ -297,7 +302,6 @@
 <p>C++中由于引入对象，对象生成必须调用构造函数，<strong>因此C++规定全局或局部静态对象当且仅当对象首次用到时进行构造。</strong></p>
 <p>c++中static对象是在用的时候构造。。。全局对象是在执行代码之前构造。</p>
 
-      
     </div>
 
     
@@ -305,92 +309,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/12/06/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-angle-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2025/12/06/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/12/06/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-12-06 19:33:43" itemprop="dateCreated datePublished" datetime="2025-12-06T19:33:43+08:00">2025-12-06</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
