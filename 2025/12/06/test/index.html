@@ -1,26 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/jialezuo/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/jialezuo/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/jialezuo/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/jialezuo/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/jialezuo/css/main.css">
-
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
-
-<script class="next-config" data-name="main" type="application/json">{"hostname":"github.com","root":"/jialezuo/","images":"/jialezuo/images","scheme":"Muse","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/jialezuo/js/config.js" defer></script>
-
-    <meta name="description" content="一、C++基础Q:说一下C++和C的区别？ 设计思想上：  C++是面向对象的语言，而C是面向过程的结构化编程语言  语法上：  C++具有封装、继承和多态三种特性 C++相比C，增加多许多类型安全的功能，比如强制类型转换、（C的类型转换是不一定安全的，比如double转int） C++支持范式编程，比如模板类、函数模板等 Q:说一下C++和Java的区别？1.编译： ​	Java源码会先经过一次">
+  <meta charset="utf-8">
+  <title>C++基础问答 | Jiale.zuo&#39;s Notes</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="C++基础问答 | Jiale.zuo&#39;s Notes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="一、C++基础Q:说一下C++和C的区别？ 设计思想上：  C++是面向对象的语言，而C是面向过程的结构化编程语言  语法上：  C++具有封装、继承和多态三种特性 C++相比C，增加多许多类型安全的功能，比如强制类型转换、（C的类型转换是不一定安全的，比如double转int） C++支持范式编程，比如模板类、函数模板等 Q:说一下C++和Java的区别？1.编译： ​	Java源码会先经过一次">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++基础问答">
 <meta property="og:url" content="https://github.com/jialezuo/2025/12/06/test/index.html">
@@ -33,179 +19,395 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://github.com/jialezuo/2025/12/06/test/">
+<link rel="icon" href="/img/avatar.jpg">
 
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://github.com/jialezuo/2025/12/06/test/","path":"2025/12/06/test/","title":"C++基础问答"}</script>
+<link href="/css/hl_theme/atom-light.css?v=1.1.0" rel="stylesheet">
 
-<script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>C++基础问答 | Jiale.zuo's Notes</title>
-  
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
 
+<script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
 
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
 
-
-
-
-
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
-<script src="/jialezuo/js/utils.js" defer></script><script src="/jialezuo/js/motion.js" defer></script><script src="/jialezuo/js/sidebar.js" defer></script><script src="/jialezuo/js/next-boot.js" defer></script>
-
-  
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
 
 
 
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
 
+<script src="/js/iconfont.js?v=1.1.0" ></script>
 
-
-  
-
-
-
-
-
-  <noscript>
-    <link rel="stylesheet" href="/jialezuo/css/noscript.css">
-  </noscript>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
-  <div class="headband"></div>
-
-  <main class="main">
-    <div class="column">
-      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/jialezuo/" class="brand" rel="start">
-      <i class="logo-line"></i>
-      <p class="site-title">Jiale.zuo's Notes</p>
-      <i class="logo-line"></i>
-    </a>
-      <p class="site-subtitle" itemprop="description">~~~</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger" aria-label="Search" role="button">
-    </div>
-  </div>
+<meta name="generator" content="Hexo 8.1.1"></head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="true" />
+  <input id="theme_highlight_on" value="true" />
+  <input id="theme_code_copy" value="true" />
 </div>
 
 
 
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/"
+   class="avatar_target">
+    <img class="avatar"
+         src="/img/avatar.jpg"/>
+</a>
+<div class="author">
+    <span>左家乐</span>
+</div>
 
-
-
-
-</header>
+<div class="icon">
+    
         
-  
-  <aside class="sidebar">
-
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
-      <ul class="sidebar-nav">
-        <li class="sidebar-nav-toc">
-          Table of Contents
-        </li>
-        <li class="sidebar-nav-overview">
-          Overview
-        </li>
-      </ul>
-
-      <div class="sidebar-panel-container">
-        <!--noindex-->
-        <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81C-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">一、C++基础</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CC%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.1.</span> <span class="nav-text">Q:说一下C++和C的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CJava%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">Q:说一下C++和Java的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8Bc-%E5%92%8Cpython%E5%9C%A8%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E4%B8%8A%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">Q:说一下c++和python在语言特性上的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B7%E4%BD%A0%E6%9D%A5%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8Bconst%E4%BF%AE%E9%A5%B0%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.4.</span> <span class="nav-text">Q:请你来回答一下const修饰成员函数的目的是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%8C%E5%92%8C%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.5.</span> <span class="nav-text">Q:常量指针，和指针常量的区别？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%EF%BC%88-const-p%EF%BC%89"><span class="nav-number">1.5.1.</span> <span class="nav-text">1.指针常量（* const p）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%88const-p%EF%BC%89"><span class="nav-number">1.5.2.</span> <span class="nav-text">2.常量指针（const *p）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%88%A4%E6%96%AD%E6%8A%80%E5%B7%A7"><span class="nav-number">1.5.3.</span> <span class="nav-text">3.判断技巧</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-char-p-%E5%92%8Cchar-p-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.6.</span> <span class="nav-text">Q:char *p 和char p[]的区别？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E8%AF%BB%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.1.</span> <span class="nav-text">1.读写的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%88%86%E9%85%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.2.</span> <span class="nav-text">2.分配地址的区别：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%AD%98%E5%8F%96%E6%95%88%E7%8E%87%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.6.3.</span> <span class="nav-text">3.存取效率的区别：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-C-%E7%A8%8B%E5%BA%8F%E6%94%B9%E9%94%99%EF%BC%9F"><span class="nav-number">1.7.</span> <span class="nav-text">Q:C++程序改错？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E4%B8%ADstatic%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">1.8.</span> <span class="nav-text">Q:说一下C++中static关键字的作用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%85%A8%E5%B1%80%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">1.8.1.</span> <span class="nav-text">1.全局静态变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%B1%80%E9%83%A8%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">1.8.2.</span> <span class="nav-text">2.局部静态变量</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.3.</span> <span class="nav-text">3.静态函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E6%88%90%E5%91%98"><span class="nav-number">1.8.4.</span> <span class="nav-text">4.类的静态成员</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="nav-number">1.8.5.</span> <span class="nav-text">5.类的静态函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q-%E8%AF%B7%E4%BD%A0%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8B%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%9F"><span class="nav-number">1.9.</span> <span class="nav-text">Q: 请你回答一下静态变量什么时候初始化？</span></a></li></ol></li></ol></div>
-        </div>
-        <!--/noindex-->
-
-        <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">左家乐</p>
-  <div class="site-description" itemprop="description">一些技术博客和随笔</div>
+            <a title="rss"
+               href="/atom.xml"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-rss"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="github"
+               href="https://github.com/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="facebook"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-facebook"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+    
+        
+            <a title="instagram"
+               href="https://www.facebook.com/faker.tops"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-instagram"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="reddit"
+               href="https://www.reddit.com/user/yelog/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-reddit"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="weibo"
+               href="http://weibo.com/u/2307534817"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="jianshu"
+               href="https://www.jianshu.com/u/ff56736de7cf"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-jianshu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="zhihu"
+               href="https://www.zhihu.com/people/jaytp/activities"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-zhihu"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="oschina"
+               href="https://my.oschina.net/yelog"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-oschina"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+    
+        
+            <a title="email"
+               href="mailto:jaytp@qq.com"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-email"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="qq"
+               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="kugou"
+               href="https://www.kugou.com/"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-kugou"></use>
+                    </svg>
+                
+            </a>
+        
+    
+        
+            <a title="neteasemusic"
+               href="https://music.163.com/#/user/home?id=88151013"
+               target="_blank">
+                
+                    <svg class="iconfont-svg" aria-hidden="true">
+                        <use xlink:href="#icon-neteasemusic"></use>
+                    </svg>
+                
+            </a>
+        
+    
 </div>
-<div class="site-state-wrap animated">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-        <a href="/jialezuo/archives/">
-          <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">posts</span>
+
+
+
+
+
+<ul>
+    <li>
+        <div class="all active" data-rel="All">All
+            
+                <small>(2)</small>
+            
+        </div>
+    </li>
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+        
+            
+            
+            
+    </div>
+    <div>
+        
+            <a class="about  hasFriend  site_url"
+               
+               href="/about">About</a>
+        
+        <a style="width: 50%"
+                
+                                           class="friends">Friends</a>
+        
+    </div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="2">
+
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        Links
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="search shortcut key i"></i>
+            <div class="right-title">All</div>
+            <i class="iconfont icon-file-tree" data-title="switch to outline view shortcut key w"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="return"></i>
+            <input id="local-search-input" autocomplete="off"/>
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="case sensitive"></i>
+            <i class="iconfont icon-tag" data-title="label"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">outline</div>
+            <i class="iconfont icon-list" data-title="switch to article list"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        
+        <a  class="All "
+           href="/jialezuo/2025/12/06/test/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="C++基础问答">C++基础问答</span>
+            <span class="post-date" title="2025-12-06 20:40:14">2025/12/06</span>
         </a>
-      </div>
-  </nav>
-</div>
+        
+        
+        <a  class="All "
+           href="/jialezuo/2025/12/06/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2025-12-06 19:33:43">2025/12/06</span>
+        </a>
+        
+        <div id="no-item-tips">
 
         </div>
-      </div>
+    </nav>
+    <div id="outline-list">
     </div>
+</div>
 
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="Toggle full screen shortcut key s">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
     
-  </aside>
-
-
+        <h1 class="article-title">C++基础问答</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        
     </div>
-
-    <div class="main-inner post posts-expand">
-
-
-  
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://github.com/jialezuo/2025/12/06/test/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/jialezuo/images/avatar.gif">
-      <meta itemprop="name" content="左家乐">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jiale.zuo's Notes">
-      <meta itemprop="description" content="一些技术博客和随笔">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="C++基础问答 | Jiale.zuo's Notes">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          C++基础问答
-        </h1>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
+    <div class="article-meta">
+        
+            Created At : <time class="date" title='Updated At: 2025-12-06 20:42:23'>2025-12-06 20:40</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            Views 👀 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E3%80%81C-%E5%9F%BA%E7%A1%80"><span class="toc-text">一、C++基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CC%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">Q:说一下C++和C的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E5%92%8CJava%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">Q:说一下C++和Java的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8Bc-%E5%92%8Cpython%E5%9C%A8%E8%AF%AD%E8%A8%80%E7%89%B9%E6%80%A7%E4%B8%8A%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">Q:说一下c++和python在语言特性上的区别？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E8%AF%B7%E4%BD%A0%E6%9D%A5%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8Bconst%E4%BF%AE%E9%A5%B0%E6%88%90%E5%91%98%E5%87%BD%E6%95%B0%E7%9A%84%E7%9B%AE%E7%9A%84%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="toc-text">Q:请你来回答一下const修饰成员函数的目的是什么？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%8C%E5%92%8C%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">Q:常量指针，和指针常量的区别？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%8C%87%E9%92%88%E5%B8%B8%E9%87%8F%EF%BC%88-const-p%EF%BC%89"><span class="toc-text">1.指针常量（* const p）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B8%B8%E9%87%8F%E6%8C%87%E9%92%88%EF%BC%88const-p%EF%BC%89"><span class="toc-text">2.常量指针（const *p）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%A4%E6%96%AD%E6%8A%80%E5%B7%A7"><span class="toc-text">3.判断技巧</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-char-p-%E5%92%8Cchar-p-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="toc-text">Q:char *p 和char p[]的区别？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%AF%BB%E5%86%99%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-text">1.读写的区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%88%86%E9%85%8D%E5%9C%B0%E5%9D%80%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-text">2.分配地址的区别：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%AD%98%E5%8F%96%E6%95%88%E7%8E%87%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="toc-text">3.存取效率的区别：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-C-%E7%A8%8B%E5%BA%8F%E6%94%B9%E9%94%99%EF%BC%9F"><span class="toc-text">Q:C++程序改错？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E8%AF%B4%E4%B8%80%E4%B8%8BC-%E4%B8%ADstatic%E5%85%B3%E9%94%AE%E5%AD%97%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="toc-text">Q:说一下C++中static关键字的作用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%85%A8%E5%B1%80%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="toc-text">1.全局静态变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%B1%80%E9%83%A8%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F"><span class="toc-text">2.局部静态变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="toc-text">3.静态函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E6%88%90%E5%91%98"><span class="toc-text">4.类的静态成员</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E5%87%BD%E6%95%B0"><span class="toc-text">5.类的静态函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Q-%E8%AF%B7%E4%BD%A0%E5%9B%9E%E7%AD%94%E4%B8%80%E4%B8%8B%E9%9D%99%E6%80%81%E5%8F%98%E9%87%8F%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E5%88%9D%E5%A7%8B%E5%8C%96%EF%BC%9F"><span class="toc-text">Q: 请你回答一下静态变量什么时候初始化？</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-3 i,
+    .toc-level-3 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
       
-
-      <time title="Created: 2025-12-06 20:40:14 / Modified: 20:42:23" itemprop="dateCreated datePublished" datetime="2025-12-06T20:40:14+08:00">2025-12-06</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody"><h1 id="一、C-基础"><a href="#一、C-基础" class="headerlink" title="一、C++基础"></a>一、C++基础</h1><h2 id="Q-说一下C-和C的区别？"><a href="#Q-说一下C-和C的区别？" class="headerlink" title="Q:说一下C++和C的区别？"></a>Q:说一下C++和C的区别？</h2><ul>
+        <h1 id="一、C-基础"><a href="#一、C-基础" class="headerlink" title="一、C++基础"></a>一、C++基础</h1><h2 id="Q-说一下C-和C的区别？"><a href="#Q-说一下C-和C的区别？" class="headerlink" title="Q:说一下C++和C的区别？"></a>Q:说一下C++和C的区别？</h2><ul>
 <li>设计思想上：</li>
 </ul>
 <p>C++是面向对象的语言，而<strong>C是面向过程的结构化编程语言</strong></p>
@@ -303,69 +505,194 @@
 <p>C++中由于引入对象，对象生成必须调用构造函数，<strong>因此C++规定全局或局部静态对象当且仅当对象首次用到时进行构造。</strong></p>
 <p>c++中static对象是在用的时候构造。。。全局对象是在执行代码之前构造。</p>
 
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">💰</a>
+</p>
+
+
+
+
+
 
     
-    
-    
-
-    <footer class="post-footer">
-
-        
-
-          <div class="post-nav">
-            <div class="post-nav-item">
-                <a href="/jialezuo/2025/12/06/hello-world/" rel="prev" title="Hello World">
-                  <i class="fa fa-angle-left"></i> Hello World
-                </a>
-            </div>
-            <div class="post-nav-item">
-            </div>
-          </div>
-    </footer>
-  </article>
-</div>
 
 
 
-
-
-
-</div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-inner">
-
-  <div class="copyright">
-    &copy; 
-    <span itemprop="copyrightYear">2025</span>
-    <span class="with-love">
-      <i class="fa fa-heart"></i>
-    </span>
-    <span class="author" itemprop="copyrightHolder">左家乐</span>
-  </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
-  </div>
 
     </div>
-  </footer>
+    <div class="copyright">
+        <p class="footer-entry">
+    ©2016-2020 Yelog
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
-  
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-  <div class="sidebar-dimmer"></div>
-  <div class="back-to-top" role="button" aria-label="Back to top">
-    <i class="fa fa-arrow-up fa-lg"></i>
-    <span>0%</span>
-  </div>
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="Toggle full screen shortcut key s"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>Help us with donation</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">alipay</label></span><span><label><input type="radio" name="pay" value="weixin">weixin</label></span>
+    </div>
+</div>
+
 
 </body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'default';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+
+
+
+
+
 </html>
